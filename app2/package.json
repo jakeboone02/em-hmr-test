@@ -1,0 +1,57 @@
+{
+  "name": "app2",
+  "version": "0.1.0",
+  "private": true,
+  "source": "src/index.html",
+  "dependencies": {
+    "@apps/shared": "1.0.0",
+    "buffer": "^6.0.3",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-dom-factories": "^1.0.2",
+    "react-error-boundary": "^3.0.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-react": "^7.16.0",
+    "@babel/preset-typescript": "^7.16.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@vitejs/plugin-react-refresh": "^1.3.6",
+    "eslint": "^8.2.0",
+    "typescript": "^4.1.2",
+    "vite": "^2.7.10",
+    "vite-tsconfig-paths": "^3.3.17"
+  },
+  "scripts": {
+    "build": "vite build",
+    "start": "vite",
+    "test": "jest --watch",
+    "test:coverage": "jest --coverage --watchAll=false --testPathPattern=.* --verbose",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit"
+  },
+  "eslintConfig": {
+    "extends": "react-app",
+    "rules": {
+      "no-script-url": "off"
+    }
+  },
+  "browserslist": {
+    "production": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "targets": {
+    "default": {
+      "distDir": "./build"
+    }
+  }
+}

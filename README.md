@@ -1,0 +1,1 @@
+# Vite monorepo HMR test

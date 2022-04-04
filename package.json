@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "workspaces": [
+    "app1",
+    "app2",
+    "shared"
+  ],
+  "scripts": {
+    "build": "yarn workspace app1 build && yarn workspace app2 build",
+    "start:app1": "yarn workspace app1 start",
+    "start:app2": "yarn workspace app2 start",
+    "lint": "eslint",
+    "pretty-print": "prettier --write {app1,app2,shared}/src/**/*.{ts,tsx,json,scss}"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.8.1",
+    "@typescript-eslint/parser": "^5.8.1",
+    "eslint": "^8.6.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "prettier": "2.6.1"
+  }
+}
