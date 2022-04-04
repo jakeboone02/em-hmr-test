@@ -1,4 +1,4 @@
-import { TestSharedComp } from '@apps/shared/src/components';
+import TestSharedComp from '@apps/shared/src/components/TestSharedComp';
 import { useState } from 'react';
 
 const Main = () => {

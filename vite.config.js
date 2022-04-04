@@ -3,6 +3,9 @@ import { defineConfig } from 'vite';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
+  esbuild: {
+    jsxInject: `import React from 'react'`
+  },
   build: {
     outDir: 'build',
     sourcemap: true,

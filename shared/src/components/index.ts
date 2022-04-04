@@ -1,2 +1,2 @@
-export * from './App';
-export * from './TestSharedComp';
+export { default as App } from './App';
+export { default as TestSharedComp } from './TestSharedComp';
